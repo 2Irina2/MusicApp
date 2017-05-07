@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="librariesButton">Libraries</string>
+    <string name="nowPlayingButton">Now Playing</string>
+    <string name="playlistsButton">Playlists</string>
+    <string name="discoverButton">Discover</string>
+    <string name="playerPlaceholder">This area is reserved for showing the progress of the song that\'s currently playing. Tapping on it should lead to the \'Now Playing\' page. </string>
+    <string name="searchButton">Search for a song in your Library</string>
+    <string name="recentlyAdded">Recently added songs: </string>
+</resources>
