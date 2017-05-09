@@ -19,7 +19,15 @@
         <activity
             android:name=".SearchActivity"
             android:label="Search" />
-        <activity android:name=".NowPlayingActivity"></activity>
+        <activity
+            android:name=".NowPlayingActivity"
+            android:label="Now Playing" />
+        <activity
+            android:name=".LibraryActivity"
+            android:label="Library" />
+        <activity
+            android:name=".DiscoverActivity"
+            android:label="Discover"/>
     </application>
 
 </manifest>

@@ -4,7 +4,11 @@
     <string name="nowPlayingButton">Now Playing</string>
     <string name="playlistsButton">Playlists</string>
     <string name="discoverButton">Discover</string>
-    <string name="playerPlaceholder">This area is reserved for showing the progress of the song that\'s currently playing. Tapping on it should lead to the \'Now Playing\' page. </string>
+    <string name="playerPlaceholder">This area is reserved for showing the progress of the song that\'s currently playing. We will play the music using the MediaPlayer class. </string>
     <string name="searchButton">Search for a song in your Library</string>
     <string name="recentlyAdded">Recently added songs: </string>
+    <string name="top3">Top 3: </string>
+    <string name="newest">Newest: </string>
+    <string name="random">Play random song! </string>
+    <string name="contentResolver">In this activity we will use the ContentResolver class to retrieve songs from the device</string>
 </resources>

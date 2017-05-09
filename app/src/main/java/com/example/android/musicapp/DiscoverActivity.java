@@ -1,7 +1,10 @@
 package com.example.android.musicapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 public class DiscoverActivity extends AppCompatActivity {
 
@@ -9,5 +12,9 @@ public class DiscoverActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_discover);
+
+        NowPlayingClickListener nowPlayingClickListener = new NowPlayingClickListener(this);
+        TextView progressView = (TextView)findViewById(R.id.random);
+        progressView.setOnClickListener(nowPlayingClickListener);
     }
 }

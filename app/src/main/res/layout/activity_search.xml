@@ -1,9 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicapp.SearchActivity">
+    tools:context="com.example.android.musicapp.SearchActivity"
+    android:background="@color/colorSecondaryDark">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/searchGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Search for songs"
+            android:textColorHint="@color/colorSecondary"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="submit"
+            android:background="@color/colorPrimaryLight"
+            android:textColor="@android:color/white"/>
+    </LinearLayout> <!-- SEARCH GROUP -->
+
+    <LinearLayout
+        android:id="@+id/searchResults"
+        style="@style/HomeActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSecondaryLight"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_below="@id/searchGroup">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Search results"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorSecondary"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SONG23" />
+
+                <TextView
+                    style="@style/artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artist2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorSecondary"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SONG11" />
+
+                <TextView
+                    style="@style/artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artist1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorSecondary"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SONG35" />
+
+                <TextView
+                    style="@style/artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artist3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout> <!-- RECENTLY ADDED -->
+
+    <TextView
+        android:id="@+id/progress"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:text="@string/playerPlaceholder"
+        android:textSize="20sp" /> <!-- NOW PLAYING -->
+</RelativeLayout>

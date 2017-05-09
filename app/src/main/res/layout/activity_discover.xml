@@ -1,9 +1,285 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicapp.DiscoverActivity">
+    tools:context="com.example.android.musicapp.DiscoverActivity"
+    android:background="@color/colorSecondaryDark">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/top3"
+            style="@style/HomeActivityLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSecondaryLight"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/top3"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSecondary"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SONG23" />
+
+                    <TextView
+                        style="@style/artist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Artist2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSecondary"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SONG11" />
+
+                    <TextView
+                        style="@style/artist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Artist1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSecondary"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SONG35" />
+
+                    <TextView
+                        style="@style/artist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Artist3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout> <!-- TOP THREE -->
+
+        <LinearLayout
+            android:layout_below="@id/top3"
+            android:id="@+id/newest"
+            style="@style/HomeActivityLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSecondaryLight"
+            android:orientation="vertical"
+            android:padding="8dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/newest"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSecondary"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SONG23" />
+
+                    <TextView
+                        style="@style/artist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Artist2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSecondary"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SONG11" />
+
+                    <TextView
+                        style="@style/artist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Artist1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSecondary"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SONG35" />
+
+                    <TextView
+                        style="@style/artist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Artist3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout> <!-- NEWEST -->
+
+        <Button
+            android:id="@+id/random"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSecondaryLight"
+            android:text="@string/random"
+            android:textSize="20sp"
+            android:layout_below="@id/newest"
+            /> <!-- RANDOM -->
+
+    </RelativeLayout>
+
+</ScrollView>
